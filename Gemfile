@@ -8,3 +8,7 @@ end
 group :test, :development do
   gemspec
 end
+
+group :development do
+  gem 'benchmark-ips'
+end
