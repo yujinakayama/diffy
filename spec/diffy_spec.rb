@@ -1,6 +1,8 @@
 require 'rspec'
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'diffy'))
 
+Diffy::Diff = Diffy::RubyDiff
+
 describe Diffy::Diff do
 
   describe "diffing two files" do
@@ -593,4 +595,3 @@ describe 'Diffy::CSS' do
     expect(Diffy::CSS).to include 'diff{overflow:auto;}'
   end
 end
-
